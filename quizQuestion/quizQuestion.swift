@@ -1,13 +1,16 @@
 //
-//  boroughQuestion.swift
+//  ContentView.swift
 //  quizQuestion
 //
 //  Created by scholar on 8/16/23.
-//
+//orange: #C45824
+//Brown: #855141
+//green: #556B2F
+//beige: #FBEDCD
 
 import SwiftUI
 
-struct boroughQuestion: View {
+struct quizQuestion: View {
     let deviceBg = #colorLiteral(red: 0.9655330777, green: 0.8915256858, blue: 0.7311252952, alpha: 1)
     var body: some View {
 
@@ -18,27 +21,18 @@ struct boroughQuestion: View {
             
                 VStack {
                     
-                    Text("Which borough would you like to explore?")
+                    Text("What activity do you want to do?")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 0.769, green: 0.349, blue: 0.2))
                         .multilineTextAlignment(.center)
-                           .padding([.top, .leading, .trailing])
-                   Spacer().frame(height: 20)
+                    Spacer().frame(height: 20)
                         .padding(.vertical)
                     
-                    Button("Bronx") {
-                    }
-                    .padding()
-                    .frame(width: 200.0)
-                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
-                    .clipShape(Capsule())
-                    .foregroundColor(.white)
-                    Spacer().frame(height: 50)
                     
-                    NavigationLink(destination: searchResults0()) {
+                    NavigationLink(destination: boroughQuestion()) {
                         NavigationStack {
-                            Text("Queens")
+                            Text("Food")
                                 .padding()
                                 .frame(width: 200.0)
                                 .background(Color(red: 0.769, green: 0.349, blue: 0.2))
@@ -49,8 +43,7 @@ struct boroughQuestion: View {
                         
                     }
                     
-    
-                    Button("Manhattan") {
+                    Button("Kid Activities") {
                     }
                     .padding()
                     .frame(width: 200.0)
@@ -59,9 +52,18 @@ struct boroughQuestion: View {
                     .foregroundColor(.white)
                     Spacer().frame(height: 50)
                     
-                    NavigationLink(destination: searchResults0()) {
+                    Button("Activities") {
+                    }
+                    .padding()
+                    .frame(width: 200.0)
+                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
+                    .clipShape(Capsule())
+                    .foregroundColor(.white)
+                    Spacer().frame(height: 50)
+                    
+                    NavigationLink(destination: boroughQuestion()) {
                         NavigationStack {
-                            Text("Brooklyn")
+                            Text("Shopping")
                                 .padding()
                                 .frame(width: 200.0)
                                 .background(Color(red: 0.769, green: 0.349, blue: 0.2))
@@ -70,14 +72,6 @@ struct boroughQuestion: View {
                             Spacer().frame(height: 50)
                         }
                     }
-                    Button("Staten Island") {
-                    }
-                    .padding()
-                    .frame(width: 200.0)
-                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
-                    .clipShape(Capsule())
-                    .foregroundColor(.white)
-                    Spacer().frame(height: 50)
                     
                     
                     
@@ -90,9 +84,11 @@ struct boroughQuestion: View {
         
         
     }
+        
 
-struct boroughQuestion_Previews: PreviewProvider {
+
+struct quizQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        boroughQuestion()
+        quizQuestion()
     }
 }

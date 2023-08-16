@@ -1,90 +1,84 @@
 //
 //  ContentView.swift
-//  quizQuestion
+//  finalProject
 //
 //  Created by scholar on 8/16/23.
-//orange: #C45824
-//Brown: #855141
-//green: #556B2F
-//beige: #FBEDCD
+//
 
 import SwiftUI
 
 struct ContentView: View {
     let deviceBg = #colorLiteral(red: 0.9655330777, green: 0.8915256858, blue: 0.7311252952, alpha: 1)
     var body: some View {
-
         NavigationStack {
             ZStack {
                 Color(deviceBg)
                     .ignoresSafeArea()
-            
+                
                 VStack {
-                    
-                    Text("What activity do you want to do?")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(red: 0.769, green: 0.349, blue: 0.2))
+                    Text("Welcome to Little Apple!")
+                        .font(.system(size: 50))
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(red: 0.329, green: 0.418, blue: 0.185))
                         .multilineTextAlignment(.center)
-                    Spacer().frame(height: 20)
-                        .padding(.vertical)
+                        .padding(.top, 60.0)
+                        
+                    Image("result")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.top)
+                        .frame(width: 200.0)
+                        
                     
-                    
-                    NavigationLink(destination: boroughQuestion()) {
-                        NavigationStack {
-                            Text("Food")
-                                .padding()
-                                .frame(width: 200.0)
-                                .background(Color(red: 0.769, green: 0.349, blue: 0.2))
-                                .clipShape(Capsule())
-                                .foregroundColor(.white)
-                            Spacer().frame(height: 50)
+                    Text("Don't know what to do in NYC?")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 0.769, green: 0.344, blue: 0.144))
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 70.0)
+                        
+                       
+                    NavigationStack {
+                        NavigationLink(destination: activityQuestion()) {
+                            Text("Explore!")
                         }
+                        .padding()
+                        .buttonStyle(.borderedProminent)
+                        .tint(Color(red: 0.769, green: 0.344, blue: 0.144))
+                       // .font(.largeTitle)
+                        .frame(width: 200.0)
+                    }
+                    .padding(.vertical)
+                    
+                    
+                    
+                    HStack(alignment: .bottom){
+                        Text("About Us")
+                           // .padding(.top, 175.0)
+                            .padding()
+                        Spacer()
+                        Text("Terms & Conditions")
+                            .padding()
                         
                     }
-                    
-                    Button("Kid Activities") {
-                    }
-                    .padding()
-                    .frame(width: 200.0)
-                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
-                    .clipShape(Capsule())
-                    .foregroundColor(.white)
-                    Spacer().frame(height: 50)
-                    
-                    Button("Activities") {
-                    }
-                    .padding()
-                    .frame(width: 200.0)
-                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
-                    .clipShape(Capsule())
-                    .foregroundColor(.white)
-                    Spacer().frame(height: 50)
-                    
-                    NavigationLink(destination: boroughQuestion()) {
-                        NavigationStack {
-                            Text("Shopping")
-                                .padding()
-                                .frame(width: 200.0)
-                                .background(Color(red: 0.769, green: 0.349, blue: 0.2))
-                                .clipShape(Capsule())
-                                .foregroundColor(.white)
-                            Spacer().frame(height: 50)
-                        }
-                    }
-                    
-                    
-                    
+                    .padding(EdgeInsets(top: 50, leading: 20, bottom: -300, trailing: 0))
+                   //  .foregroundColor(Color(red: 0.769, green: 0.344, blue: 0.144))
+                    .foregroundColor(Color(red: 0.329, green: 0.418, blue: 0.185))
+                    //.padding(.bottom, -300.0)
                     
                 }
                 
+                
+                
+                
+                
+                
+                
             }}
-            
-        }
-        
-        
+        .tint(Color(red: 0.769, green: 0.349, blue: 0.2))
     }
-        
+        //.padding()
+    }
 
 
 struct ContentView_Previews: PreviewProvider {
