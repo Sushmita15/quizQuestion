@@ -39,14 +39,22 @@ struct ContentView: View {
                         
                        
                     NavigationStack {
-                        NavigationLink(destination: activityQuestion()) {
-                            Text("Explore!")
+                        NavigationLink(destination: firstQuestion()) {
+                            NavigationStack {
+                                Text("Explore")
+                                    .padding()
+                                    .frame(width: 200.0)
+                                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
+                                    .clipShape(Capsule())
+                                    .foregroundColor(.white)
+                                Spacer().frame(height: 50)
+                            }
                         }
-                        .padding()
+                 /*       .padding()
                         .buttonStyle(.borderedProminent)
                         .tint(Color(red: 0.769, green: 0.344, blue: 0.144))
                        // .font(.largeTitle)
-                        .frame(width: 200.0)
+                        .frame(width: 200.0)*/
                     }
                     .padding(.vertical)
                     
@@ -54,11 +62,16 @@ struct ContentView: View {
                     
                     HStack(alignment: .bottom){
                         Text("About Us")
+                            .font(.caption)
                            // .padding(.top, 175.0)
                             .padding()
                         Spacer()
-                        Text("Terms & Conditions")
-                            .padding()
+                     //   Text("Terms & Conditions")
+                            
+                        Link("Terms of Service",
+                              destination: URL(string: "https://www.apple.com/legal/privacy/en-ww/")!)
+                        .font(.caption)
+                        .padding()
                         
                     }
                     .padding(EdgeInsets(top: 50, leading: 20, bottom: -300, trailing: 0))
