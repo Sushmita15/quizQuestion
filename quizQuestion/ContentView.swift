@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     let deviceBg = #colorLiteral(red: 0.9655330777, green: 0.8915256858, blue: 0.7311252952, alpha: 1)
     var body: some View {
@@ -88,6 +90,7 @@ struct ContentView: View {
                 
                 
             }}
+      //  .font(.latoFont(style: .headline))
         .tint(Color(red: 0.769, green: 0.349, blue: 0.2))
     }
         //.padding()
