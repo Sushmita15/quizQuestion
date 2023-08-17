@@ -83,11 +83,7 @@ struct ContentView: View {
                     
                 }
                 
-                
-                
-                
-                
-                
+               
                 
             }}
       //  .font(.latoFont(style: .headline))

@@ -36,7 +36,7 @@ struct boroughQuestion: View {
                     .foregroundColor(.white)
                     Spacer().frame(height: 50)
                     
-                    NavigationLink(destination: placeHolder()) {
+                    NavigationLink(destination: FoodQueens()) {
                         NavigationStack {
                             Text("Queens")
                                 .padding()

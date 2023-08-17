@@ -8,6 +8,7 @@
 
 // ItemsViewModel.swift
 //ProductsListView
+/*
 import SwiftUI
 
 class ProductsViewModel: ObservableObject {
@@ -88,3 +89,4 @@ struct favLocationPG_Previews: PreviewProvider {
  }
  }
  */
+*/

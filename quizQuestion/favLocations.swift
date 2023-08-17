@@ -4,7 +4,7 @@
 //
 //  Created by Sushmita Mandal on 8/17/23.
 //
-
+/*
 import Foundation
 
 struct Product: Identifiable { 
@@ -13,3 +13,4 @@ struct Product: Identifiable {
   //  let address: String
     var isFavorite: Bool = false
 }
+*/
