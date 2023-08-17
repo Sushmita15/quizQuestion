@@ -13,7 +13,8 @@ struct Item: Identifiable {
     let id: UUID = UUID()
     var imageName: String
     var title: String
-    var address: String
+    var address: URL?
+    var location: String
     var isFavorite: Bool = false
 }
 

@@ -30,9 +30,18 @@ struct quizQuestion: View {
                         .padding(.vertical)
                     
                     
+                    Button("Food") {
+                    }
+                    .padding()
+                    .frame(width: 200.0)
+                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
+                    .clipShape(Capsule())
+                    .foregroundColor(.white)
+                    Spacer().frame(height: 50)
+                    
                     NavigationLink(destination: boroughQuestion()) {
                         NavigationStack {
-                            Text("Food")
+                            Text("Kid Activities")
                                 .padding()
                                 .frame(width: 200.0)
                                 .background(Color(red: 0.769, green: 0.349, blue: 0.2))
@@ -43,14 +52,7 @@ struct quizQuestion: View {
                         
                     }
                     
-                    Button("Kid Activities") {
-                    }
-                    .padding()
-                    .frame(width: 200.0)
-                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
-                    .clipShape(Capsule())
-                    .foregroundColor(.white)
-                    Spacer().frame(height: 50)
+                    
                     
                     Button("Activities") {
                     }

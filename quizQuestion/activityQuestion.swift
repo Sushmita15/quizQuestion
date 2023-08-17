@@ -8,6 +8,7 @@
 //green: #556B2F
 //beige: #FBEDCD
 //activityQuestion
+/*
 import SwiftUI
 
 struct activityQuestion: View {
@@ -95,3 +96,4 @@ struct activityQuestion_Previews: PreviewProvider {
     }
 }
 
+*/
