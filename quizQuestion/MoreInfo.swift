@@ -82,7 +82,7 @@ struct MoreInfo: View {
                                 Spacer()
                          /*   Text("🌏")
                                 .padding(.trailing, 55.0)*/
-                            Link("🌏",
+                            Link("🌐",
                                   destination: URL(string: "https://incapaisa.com/")!)
                             Spacer()
                             Text("📞")
