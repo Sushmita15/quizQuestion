@@ -16,7 +16,7 @@ class ProductsViewModel: ObservableObject {
         Product(name: "Product 2"),
         // Add more products as needed
     ]
-
+    
     func toggleFavorite(for product: Product) {
         if let index = products.firstIndex(where: { $0.id == product.id }) {
             products[index].isFavorite.toggle()
@@ -26,7 +26,7 @@ class ProductsViewModel: ObservableObject {
 
 struct favLocationPG: View {
     @ObservedObject var viewModel = ProductsViewModel()
-
+    
     var body: some View {
         List(viewModel.products) { product in
             HStack {
@@ -44,7 +44,7 @@ struct favLocationPG: View {
 
 struct FavoritesView: View {
     @ObservedObject var viewModel = ProductsViewModel()
-
+    
     var body: some View {
         List(viewModel.products.filter { $0.isFavorite }) { favoriteProduct in
             Text(favoriteProduct.name)
@@ -61,7 +61,7 @@ struct favLocationsPG: View {
                         Image(systemName: "list.bullet")
                         Text("Products")
                     }
-
+                
                 FavoritesView()
                     .tabItem {
                         Image(systemName: "heart.fill")
@@ -80,11 +80,11 @@ struct favLocationPG_Previews: PreviewProvider {
 }
 
 /*@main
-struct quizQuestionApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
-*/
+ struct quizQuestionApp: App {
+ var body: some Scene {
+ WindowGroup {
+ ContentView()
+ }
+ }
+ }
+ */

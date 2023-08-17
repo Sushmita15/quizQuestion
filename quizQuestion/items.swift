@@ -10,9 +10,10 @@ import Foundation
 import SwiftUI
 
 struct Item: Identifiable {
-    var id = UUID()
+    let id: UUID = UUID()
     var imageName: String
     var title: String
     var address: String
+    var isFavorite: Bool = false
 }
 
