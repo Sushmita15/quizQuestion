@@ -21,19 +21,31 @@ struct activityQuestion: View {
             
                 VStack {
                     
-                    Text("What activity do you want to do?")
+                    Text("Which of these interests you?")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 0.769, green: 0.349, blue: 0.2))
                         .multilineTextAlignment(.center)
+                        .padding(.horizontal)
                     Spacer()
                         .frame(height: 20)
                         .padding(.vertical)
                     
+                   
+                   
+                    
+                    Button("Food") {
+                    }
+                    .padding()
+                    .frame(width: 200.0)
+                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
+                    .clipShape(Capsule())
+                    .foregroundColor(.white)
+                    Spacer().frame(height: 50)
                     
                     NavigationLink(destination: boroughQuestion()) {
                         NavigationStack {
-                            Text("Food")
+                            Text("Kid Activities")
                                 .padding()
                                 .frame(width: 200.0)
                                 .background(Color(red: 0.769, green: 0.349, blue: 0.2))
@@ -44,14 +56,6 @@ struct activityQuestion: View {
                         
                     }
                     
-                    Button("Kid Activities") {
-                    }
-                    .padding()
-                    .frame(width: 200.0)
-                    .background(Color(red: 0.769, green: 0.349, blue: 0.2))
-                    .clipShape(Capsule())
-                    .foregroundColor(.white)
-                    Spacer().frame(height: 50)
                     
                     Button("Activities") {
                     }

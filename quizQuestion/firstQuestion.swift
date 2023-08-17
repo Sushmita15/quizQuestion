@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct firstQuestion: View {
-    let deviceBg = #colorLiteral(red: 0.9866549373, green: 0.9273591042, blue: 0.8065959811, alpha: 1)
+    let deviceBg = #colorLiteral(red: 0.9655330777, green: 0.8915256858, blue: 0.7311252952, alpha: 1)
     var body: some View {
         
         NavigationStack {
@@ -18,7 +18,7 @@ struct firstQuestion: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    Text ("Ready to take the quiz so you can match you with an experience?")
+                    Text ("Ready to take the quiz so we can match you with an experience?")
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 0.77, green: 0.344, blue: 0.144))

@@ -20,6 +20,8 @@
 		BDE11C302A8D0C85007A7D4B /* quizQuestionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE11C2F2A8D0C85007A7D4B /* quizQuestionUITests.swift */; };
 		BDE11C322A8D0C85007A7D4B /* quizQuestionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE11C312A8D0C85007A7D4B /* quizQuestionUITestsLaunchTests.swift */; };
 		BDE11C3F2A8D145D007A7D4B /* boroughQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE11C3E2A8D145D007A7D4B /* boroughQuestion.swift */; };
+		E004C0E42A8DD0D200A95040 /* items.swift in Sources */ = {isa = PBXBuildFile; fileRef = E004C0E32A8DD0D200A95040 /* items.swift */; };
+		E0A1CD902A8DDDBA000938ED /* queensFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1CD8F2A8DDDBA000938ED /* queensFood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		BDE11C2F2A8D0C85007A7D4B /* quizQuestionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizQuestionUITests.swift; sourceTree = "<group>"; };
 		BDE11C312A8D0C85007A7D4B /* quizQuestionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizQuestionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BDE11C3E2A8D145D007A7D4B /* boroughQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boroughQuestion.swift; sourceTree = "<group>"; };
+		E004C0E32A8DD0D200A95040 /* items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = items.swift; sourceTree = "<group>"; };
+		E0A1CD8F2A8DDDBA000938ED /* queensFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queensFood.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +112,14 @@
 			children = (
 				BDE11C162A8D0C82007A7D4B /* ContentView.swift */,
 				BDDA22962A8D51FD000259D0 /* firstQuestion.swift */,
+				BDDD43E62A8D387F009C4E64 /* activityQuestion.swift */,
 				BD03615F2A8D4E200070323E /* quizQuestion.swift */,
 				BD078FB52A8D34EB008DA350 /* searchResults0.swift */,
+				E0A1CD8F2A8DDDBA000938ED /* queensFood.swift */,
 				BDE11C142A8D0C82007A7D4B /* quizQuestionApp.swift */,
-				BDDD43E62A8D387F009C4E64 /* activityQuestion.swift */,
 				BDE11C3E2A8D145D007A7D4B /* boroughQuestion.swift */,
 				BD939F842A8D2A3F00324465 /* placeHolder.swift */,
+				E004C0E32A8DD0D200A95040 /* items.swift */,
 				BDE11C182A8D0C84007A7D4B /* Assets.xcassets */,
 				BDE11C1A2A8D0C84007A7D4B /* Preview Content */,
 			);
@@ -277,6 +283,8 @@
 			files = (
 				BD078FB62A8D34EB008DA350 /* searchResults0.swift in Sources */,
 				BDE11C172A8D0C82007A7D4B /* ContentView.swift in Sources */,
+				E0A1CD902A8DDDBA000938ED /* queensFood.swift in Sources */,
+				E004C0E42A8DD0D200A95040 /* items.swift in Sources */,
 				BDDD43E72A8D387F009C4E64 /* activityQuestion.swift in Sources */,
 				BDE11C152A8D0C82007A7D4B /* quizQuestionApp.swift in Sources */,
 				BD0361602A8D4E200070323E /* quizQuestion.swift in Sources */,
